@@ -12,10 +12,7 @@ a{
 nav a{
     color: black!important;
 }
-nav a:hover{
-    color: #FF003F!important;
-    transition: 0.2s;
-}
+
 a:hover{
     color: white;
 }
@@ -54,4 +51,15 @@ iframe{
  table{
     width: 90%!important;
  }   
+}
+
+li a{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav a:hover{
+    color: #FF003F!important;
+    text-decoration-color: black!important;
+    transition: 0.2s;
 }
