@@ -41,12 +41,48 @@
     </div>
   </nav>
 
-  <form class="row g-3 needs-validation" novalidate>
-    <div class="col-md-4">
-      <label for="validationCustom01" class="form-label">First name</label>
-      <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-      <div class="valid-feedback">
-        Looks good!
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">QMADOS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html">Principal <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Pedidos</a>
+            <a class="nav-item nav-link" href="#">Pedidos</a> 
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+   
+        <form action="" method="post">
+          <label for="comentario">Comentario</label>
+          <input type="text">
+          <label for=""></label>
+          
+          <input type="radio" value="Entregado">Entregado
+          <input type="radio" value="Cliente no encontrado">cliente no encontrado
+          <input type="radio" value="Perdio">perdido
+          <input type="radio" value="Comentario">Comentario
+        </form>
+        <caption>Pedidos</caption>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Numero de pedido</th>
+                    <th>Direccion</th>
+                    <th>Hora de entrega</th>
+                    <th>Peso</th>
+                    
+
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
       </div>
     </div>
     <div class="col-md-4">
