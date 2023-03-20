@@ -12,45 +12,43 @@
 </head>
 <body>
 
-    <div class="container-fluid">
-      
-      <div class="row">
-
-          <div class="col-6" id="divlogo">
-            <img src="img/Logo_QMado.png" alt="" id="imglogo" >
-          </div>
-          
-          <div class="col-6 ">
-            <a href="login.html"><i class="bi bi-people"></i></a>
-          </div>
-
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+      <ul class="navbar-nav justify-content-around align-items-center flex-grow-1 pe-3">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item logui">
+          <img class="logo" src="img/Logo_QMado.png" alt="logo">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        
+      </ul>
     </div>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">QMADO</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-          <div class="navbar-nav ">
-            <a class="nav-item nav-link active" href="index.html">Principal <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Pedidos</a>
-            <a class="nav-item nav-link" href="#">Pedidos</a> 
-          </div>
-        </div>
-      </nav>
+  </nav>
   <main>
-    <div class="row d-flex justify-content-around align-items-center">
-    <div class="card col-lg-4 col-sm-12 g-5 w-75 border-3" >
-      <iframe class="my-3 py-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.518826048664!2d-5.9275161847349995!3d37.40121007982922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126f0d94333a4b%3A0xc801daeab863a6fe!2sVirtualSoft%20Studios!5e0!3m2!1ses!2ses!4v1679307951312!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+    <h1 class="text-center pt-5">Número de pedido:</h1>
+    <h2 class="text-center">4565675RT</h2>
+    <div class="d-flex justify-content-around align-items-center mt-5">
+    <div class="card g-5 w-75 border-3" >
+      
       <div class="accordion" id="accordionExample">
         <div class="card">
           <div class="card-header" id="headingOne">
             <h2 class="mb-0">
               <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Informacion pedidos:
+                Informacion pedido:
               </button>
             </h2>
           </div>
@@ -66,14 +64,14 @@
         <div class="card">
           <div class="card-header" id="headingTwo">
             <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Informacion de la direccion:
               </button>
             </h2>
           </div>
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
             <div class="card-body">
-              <p>Provincia</p>
+ <p>Provincia</p>
               <p>Localidad</p>
               <p>Codigo postal</p>
               <p>Nombre de la via</p>
@@ -83,309 +81,22 @@
         <div class="card">
           <div class="card-header" id="headingThree">
             <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Modificar pedido
               </button>
             </h2>
           </div>
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
-              <a href="editar.html" class="btn btn-dark btn-sm">Editar pedido</a>
+              <a href="editar.html" class="btn btn-danger btn-sm">Editar pedido</a>
             </div>
           </div>
         </div>
     </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.518826048664!2d-5.9275161847349995!3d37.40121007982922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126f0d94333a4b%3A0xc801daeab863a6fe!2sVirtualSoft%20Studios!5e0!3m2!1ses!2ses!4v1679307951312!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
-  <div class="card col-lg-4 col-sm-12 g-5 w-75 border-danger border-3" >
-    <iframe class="my-3 py-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.518826048664!2d-5.9275161847349995!3d37.40121007982922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126f0d94333a4b%3A0xc801daeab863a6fe!2sVirtualSoft%20Studios!5e0!3m2!1ses!2ses!4v1679307951312!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <div class="card-body">
-      <h5 class="card-title">Numero Pedido</h5>
-      <p class="card-text">01255649</p>
-    </div>
-
-    <div class="accordion" id="accordionExample">
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h2 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Informacion pedidos:
-            </button>
-          </h2>
-        </div>
-    
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-          <div class="card-body">
-             <p>Numero de bultos</p>
-             <p>Hora de entrega</p>
-             <p>Peso</p>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h2 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Informacion de la direccion:
-            </button>
-          </h2>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-          <div class="card-body">
-            <p>Provincia</p>
-            <p>Localidad</p>
-            <p>Codigo postal</p>
-            <p>Nombre de la via</p>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingThree">
-          <h2 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Modificar pedido
-            </button>
-          </h2>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-          <div class="card-body">
-            <a href="editar.html" class="btn btn-dark btn-sm">Editar pedido</a>
-          </div>
-        </div>
-      </div>
-  </div>
-</div> <div class="card col-lg-4 col-sm-12 g-5 w-75 border-danger border-3" >
-  <iframe class="my-3 py-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.518826048664!2d-5.9275161847349995!3d37.40121007982922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126f0d94333a4b%3A0xc801daeab863a6fe!2sVirtualSoft%20Studios!5e0!3m2!1ses!2ses!4v1679307951312!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <div class="card-body">
-    <h5 class="card-title">Numero Pedido</h5>
-    <p class="card-text">01255649</p>
-  </div>
-
-  <div class="accordion" id="accordionExample">
-    <div class="card">
-      <div class="card-header" id="headingOne">
-        <h2 class="mb-0">
-          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Informacion pedidos:
-          </button>
-        </h2>
-      </div>
   
-      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body">
-           <p>Numero de bultos</p>
-           <p>Hora de entrega</p>
-           <p>Peso</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingTwo">
-        <h2 class="mb-0">
-          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Informacion de la direccion:
-          </button>
-        </h2>
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="card-body">
-          <p>Provincia</p>
-          <p>Localidad</p>
-          <p>Codigo postal</p>
-          <p>Nombre de la via</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingThree">
-        <h2 class="mb-0">
-          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Modificar pedido
-          </button>
-        </h2>
-      </div>
-      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-        <div class="card-body">
-          <a href="editar.html" class="btn btn-dark btn-sm">Editar pedido</a>
-        </div>
-      </div>
-    </div>
-</div>
-</div>
-<div class="card col-lg-4 col-sm-12 g-5 w-75 border-danger border-3" >
-  <iframe class="my-3 py-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.518826048664!2d-5.9275161847349995!3d37.40121007982922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126f0d94333a4b%3A0xc801daeab863a6fe!2sVirtualSoft%20Studios!5e0!3m2!1ses!2ses!4v1679307951312!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <div class="card-body">
-    <h5 class="card-title">Numero Pedido</h5>
-    <p class="card-text">01255649</p>
-  </div>
 
-  <div class="accordion" id="accordionExample">
-    <div class="card">
-      <div class="card-header" id="headingOne">
-        <h2 class="mb-0">
-          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Informacion pedidos:
-          </button>
-        </h2>
-      </div>
-  
-      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body">
-           <p>Numero de bultos</p>
-           <p>Hora de entrega</p>
-           <p>Peso</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingTwo">
-        <h2 class="mb-0">
-          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Informacion de la direccion:
-          </button>
-        </h2>
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="card-body">
-          <p>Provincia</p>
-          <p>Localidad</p>
-          <p>Codigo postal</p>
-          <p>Nombre de la via</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingThree">
-        <h2 class="mb-0">
-          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Modificar pedido
-          </button>
-        </h2>
-      </div>
-      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-        <div class="card-body">
-          <a href="editar.html" class="btn btn-dark btn-sm">Editar pedido</a>
-        </div>
-      </div>
-    </div>
-</div>
-</div>
-<div class="card col-lg-4 col-sm-12 g-5 w-75 border-danger border-3" >
-  <iframe class="my-3 py-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.518826048664!2d-5.9275161847349995!3d37.40121007982922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126f0d94333a4b%3A0xc801daeab863a6fe!2sVirtualSoft%20Studios!5e0!3m2!1ses!2ses!4v1679307951312!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <div class="card-body">
-    <h5 class="card-title">Numero Pedido</h5>
-    <p class="card-text">01255649</p>
-  </div>
-
-  <div class="accordion" id="accordionExample">
-    <div class="card">
-      <div class="card-header" id="headingOne">
-        <h2 class="mb-0">
-          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Informacion pedidos:
-          </button>
-        </h2>
-      </div>
-  
-      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body">
-           <p>Numero de bultos</p>
-           <p>Hora de entrega</p>
-           <p>Peso</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingTwo">
-        <h2 class="mb-0">
-          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Informacion de la direccion:
-          </button>
-        </h2>
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="card-body">
-          <p>Provincia</p>
-          <p>Localidad</p>
-          <p>Codigo postal</p>
-          <p>Nombre de la via</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingThree">
-        <h2 class="mb-0">
-          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Modificar pedido
-          </button>
-        </h2>
-      </div>
-      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-        <div class="card-body">
-          <a href="editar.html" class="btn btn-dark btn-sm">Editar pedido</a>
-        </div>
-      </div>
-    </div>
-</div>
-</div>
-<div class="card col-lg-4 col-sm-12 g-5 w-75 border-danger border-3" >
-  <iframe class="my-3 py-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.518826048664!2d-5.9275161847349995!3d37.40121007982922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126f0d94333a4b%3A0xc801daeab863a6fe!2sVirtualSoft%20Studios!5e0!3m2!1ses!2ses!4v1679307951312!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <div class="card-body">
-    <h5 class="card-title">Numero Pedido</h5>
-    <p class="card-text">01255649</p>
-  </div>
-
-  <div class="accordion" id="accordionExample">
-    <div class="card">
-      <div class="card-header" id="headingOne">
-        <h2 class="mb-0">
-          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Informacion pedidos:
-          </button>
-        </h2>
-      </div>
-  
-      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body">
-           <p>Numero de bultos</p>
-           <p>Hora de entrega</p>
-           <p>Peso</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingTwo">
-        <h2 class="mb-0">
-          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Informacion de la direccion:
-          </button>
-        </h2>
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="card-body">
-          <p>Provincia</p>
-          <p>Localidad</p>
-          <p>Codigo postal</p>
-          <p>Nombre de la via</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingThree">
-        <h2 class="mb-0">
-          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Modificar pedido
-          </button>
-        </h2>
-      </div>
-      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-        <div class="card-body">
-          <a href="editar.html" class="btn btn-dark btn-sm">Editar pedido</a>
-        </div>
-      </div>
-    </div>
-</div>
-</div>
-</div>
 
   </main>
 
