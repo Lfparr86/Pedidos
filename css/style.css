@@ -49,3 +49,9 @@ a:hover{
 iframe{
     height: 20rem;
 }
+
+@media (max-width: 1080px) {
+ table{
+    width: 90%!important;
+ }   
+}
