@@ -9,6 +9,13 @@ a{
     text-decoration: none;
     color: black;
 }
+nav a{
+    color: black!important;
+}
+nav a:hover{
+    color: #FF003F!important;
+    transition: 0.2s;
+}
 a:hover{
     color: white;
 }
@@ -29,3 +36,16 @@ a:hover{
     margin: 0!important;
 }
 
+.logo{
+     width: 20%;
+     margin: 0!important;
+
+}
+.logui{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    height: 20rem;
+}
