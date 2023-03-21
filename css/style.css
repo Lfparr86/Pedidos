@@ -73,8 +73,27 @@ nav a:hover{
     }   
    }
 
+#logologin{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    width: 30%;
+}
+
    @media (max-width:768px){
     #logologin{
-        width: 100px;
+        width: 200px;
+        margin-top: 25%!important;
+    }
+    .formulario{
+        margin-bottom: 40%!important;
     }
    }
+
+.navbarColor{
+    background-color: #e7e7e7!important;
+}
+
+ul{
+    list-style: none;
+    margin: 0!important
+}

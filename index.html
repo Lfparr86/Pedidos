@@ -10,39 +10,43 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <nav class="navbar navbar-expand-lg navbar-light navbarColor ">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarNavDropdown">
-          <ul class="navbar-nav flex-row justify-content-around align-items-center flex-grow-1 pe-3">
-            <li class="nav-item margin mb-2">
-              <a class="nav-link" href="index.html">Pedidos <span class="sr-only">(current)</span></a>
+          <ul class="row flex-row justify-content-center align-items-center">
+            <li class="nav-item logui mb-2 text-center col-lg-3">
+              <img class="logo" src="img/Logo_QMado.png" alt="logo">
             </li>
-            <li class="nav-item logui mb-2">
-              <img class="logo mb-2" src="img/Logo_QMado.png" alt="logo">
+            <li class="nav-item col-lg-3">
+              <a class="nav-link text-center" href="index.html">Pedidos <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item margin2">
-                <a href="#" class="dropdown-toggle mb-2" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF003F" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <li class="nav-item col-lg-3">
+              <a class="nav-link text-center" href="finalizar.html">Pedidos finalizados</a>
+            </li>
+            <li class="nav-item col-lg-3 justify-content-center d-flex">
+              <div class="dropdown">
+                <button class="border-0 navbarColor" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF003F" class="bi bi-person-circle" viewBox="0 0 16 16">
                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                     <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                  </svg></a>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
+                  </svg>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Perfil</a>
+                  <a class="dropdown-item" href="#">Log out</a>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
       </nav>
-
        <h1 class="text-center py-5">Pedidos</h1>
        <div class=" border border-dark rounded container">
         <table class="table container">
             <thead class="thead-dark">
                 <tr>
-                    
                     <th class="text-center py-3">Número de pedido</th>
                     <th class="text-center py-3">Hora de entrega</th>
                     <th class="text-center py-3">Dirección</th>
@@ -52,7 +56,6 @@
             </thead>
             <tbody>
                 <tr>
-
                     <td class="py-5 text-center">456456</td>
                     <td class="py-5 text-center">08:00/10:00</td>
                     <td class="py-5 text-center">C/lemos numero 4 portal 5 3ºB 41009</td>
@@ -61,7 +64,6 @@
                 </tr>
 
                 <tr>
-
                     <td class="py-5 text-center">486456</td>
                     <td class="py-5 text-center">08:00/10:00</td>
                     <td class="py-5 text-center">C/lemos numero 4 portal 5 3ºB 41009</td>
@@ -70,7 +72,6 @@
                 </tr>
 
                 <tr>
-
                     <td class="py-5 text-center">456456</td>
                     <td class="py-5 text-center">08:00/10:00</td>
                     <td class="py-5 text-center">C/lemos numero 4 portal 5 3ºB 41009</td>
@@ -79,7 +80,6 @@
                 </tr>
 
                 <tr>
-
                     <td class="py-5 text-center">456456</td>
                     <td class="py-5 text-center">08:00/10:00</td>
                     <td class="py-5 text-center">C/lemos numero 4 portal 5 3ºB 41009</td>
