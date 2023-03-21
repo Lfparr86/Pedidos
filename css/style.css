@@ -72,3 +72,9 @@ nav a:hover{
         margin-right: 2rem;
     }   
    }
+
+   @media (max-width:768px){
+    #logologin{
+        width: 100px;
+    }
+   }
