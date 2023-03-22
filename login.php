@@ -15,13 +15,13 @@
         <img src="img/Logo_QMado_Ver2_transp.png" alt="Logo" id="logologin">
     </div>
 <div class="container w-50 pt-5 mt-2 rounded bg-danger formulario">
-    <form class="container text-white">
+    <form method="post" action="loginSelect.php" class="container text-white">
         <div class="form-outline mb-4">
-          <input type="text"  class="form-control border border-3 border-dark" />
-          <label class="form-label" for="Usuario">Usuario</label>
+          <input name="email" type="email" class="form-control border border-3 border-dark"/>
+          <label class="form-label" for="Usuario">Email</label>
         </div>
         <div class="form-outline mb-4">
-          <input type="password"  class="form-control border border-3 border-dark" />
+          <input name="password" type="password"  class="form-control border border-3 border-dark"/>
           <label class="form-label" for="Contraseña">Contraseña</label>
         </div>
         <div class="row mb-4">
@@ -29,18 +29,17 @@
             <!-- Checkbox -->
             <div class="form-check">
               <input class="form-check-input border border-3 border-dark" type="checkbox" value=""  />
-              <label class="form-check-label" for="form2Example31"> Recordar datos</label>
+              <label class="form-check-label" for="form2Example31">Recordar datos</label>
             </div>
           </div>
           <div class="col">
             <a href="#!">Olvidaste la contraseña</a>
           </div>
         </div>
-        <button type="button" class="btn btn-light btn-block mb-4 border border-3 border-dark">Logarse</button>
-        <div class="text-center">
-          <p>Registrarse: <a href="#!">Registro</a></p>
 
-        </div>
+
+        <button type="submit" class="btn btn-light btn-block mb-4 border border-3 border-dark">Submit</button>
+        
       </form>
     </div>
 </body>

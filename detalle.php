@@ -45,7 +45,12 @@
   </nav>
   <main>
     <h1 class="text-center pt-5">Número de pedido:</h1>
-    <h2 class="text-center">4565675RT</h2>
+   
+    <h2 class="text-center"> 
+      <?php include_once "conexion.php";
+      $id = $_GET["id"];
+      echo $id;
+    ?></h2>
     <div class="grandiv">
     <div class="card border-3 div" >
       
@@ -87,6 +92,7 @@
         <div class="card">
           <div class="card-header py-3" id="headingThree">
             <h2 class="mb-0">
+              
               <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Modificar pedido
               </button>
@@ -94,12 +100,19 @@
           </div>
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
-              <a href="editar.html" class="btn btn-danger btn-sm">Editar pedido</a>
+            
             </div>
           </div>
         </div>
     </div>
+    
   </div>
+  <?php include_once "conexion.php";
+      $id = $_GET["id"];
+            echo" <a href='editar.php?id=$id' class='btn btn-danger' type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree'>".
+               "EDITAR" .
+              "</a>";
+              ?>
   <div class="div">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.518826048664!2d-5.9275161847349995!3d37.40121007982922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126f0d94333a4b%3A0xc801daeab863a6fe!2sVirtualSoft%20Studios!5e0!3m2!1ses!2ses!4v1679307951312!5m2!1ses!2ses"  style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>

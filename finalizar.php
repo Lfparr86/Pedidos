@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Site</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
@@ -43,50 +42,47 @@
       </ul>
     </div>
   </nav>
-  
-  <div class="container mt-5">
-    <h2 class="text-center py-3">Editando pedido número: (aquí el nº de pedido)</h2>
-    <form class="row g-3 needs-validation" novalidate>
-      <div class="col-lg-6 col-sm-12">
-        <label for="validationCustom01" class="form-label">Selecciona estado</label>
-    <div class="mb-3">
-    <select class="form-select form-select-lg" name="select" id="select">
-    <option value="entregado">Entregado</option>
-    <option value="clienteNotFound">Cliente no encontrado</option>
-    <option value="accident">Incidencia con el paquete</option>
-  </select>
-      </div>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-      </div>
 
-      <div class="mb-3">
-        <label for="textarea" class="form-label">Comentario</label>
-        <textarea class="form-control" name="textarea" id="textarea" rows="3"></textarea>
-      </div>
+       <h1 class="text-center py-5">Pedidos finalizados</h1>
+       <div class=" border border-dark rounded container">
+       <table class="table container">
+            <thead class="thead-dark">
+                <tr>
+                    <th class="text-center py-3">ID</th>
+                    <th class="text-center py-3">Dirección</th>
+                    <th class="text-center py-3">Entregado</th>
+                    <th class="text-center py-3">Comentario</th>
+                    <th class="text-center py-3">Hora de entrega</th>
 
-      <div class="col-12 d-flex justify-content-between align-items-center">
-        <button class="btn btn-danger" type="submit">Editar pedido</button>
-        <a href="detalle.html"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#FF003F" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
-          <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
-        </svg></a>
-      </div>
-    </form>
-  </div>     
+                </tr>
+            </thead>
+            <tbody>
+              <?php 
+              include_once "conexion.php";
+              $consulta = "SELECT * FROM `pedido` WHERE `entregado`= 1 ORDER BY id ASC";
+              $ordered = mysqli_query($conn, $consulta);
+              foreach ($ordered as $key => $lista) {
+                echo "<tr>";
+                foreach ($lista as $key => $insideLista) {
+                    echo "<td>" . $insideLista . "</td>";
+                }
+                echo "</tr>";
+            }
+            ?>
+            </tbody>
+        </table>
+    </div>
 
-  <div class="container">
-    <footer class="py-3 my-4">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Direccion</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Dudas</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
-      </ul>
-      <p class="text-center text-muted">© 2022 QMADO</p>
-    </footer>
-  </div>
-  
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Direccion</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Dudas</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
+          </ul>
+          <p class="text-center text-muted">© 2022 QMADO</p>
+        </footer>
+      </div>
 </body>
 </html>

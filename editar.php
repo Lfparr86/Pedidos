@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Site</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
@@ -42,70 +43,35 @@
       </ul>
     </div>
   </nav>
+  
+  <div class="container mt-5">
+    <h2 class="text-center py-3">Editando pedido número: (aquí el nº de pedido)</h2>
+ <!-- Formulario para actualizar entregado y comentario -->
+<form action="actualizar.php" method="post">
+  <label for="pedido_id">ID del pedido:</label>
+  <input type="text" name="pedido_id" id="pedido_id">
+  <br>
+  <label for="entregado">Entregado:</label>
+  <input type="checkbox" name="entregado" id="entregado" value="1">
+  <br>
+  <label for="comentario">Comentario:</label>
+  <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+  <br>
+  <input type="submit" value="Actualizar">
+</form>
+  </div>     
 
-       <h1 class="text-center py-5">Pedidos</h1>
-       <div class=" border border-dark rounded container">
-        <table class="table container">
-            <thead class="thead-dark">
-                <tr>
-                    
-                    <th class="text-center py-3">Número de pedido</th>
-                    <th class="text-center py-3">Hora de entrega</th>
-                    <th class="text-center py-3">Dirección</th>
-                    
-
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-
-                    <td class="py-5 text-center">456456</td>
-                    <td class="py-5 text-center">08:00/10:00</td>
-                    <td class="py-5 text-center">C/lemos numero 4 portal 5 3ºB 41009</td>
-                    
-                </tr>
-
-                <tr>
-
-                    <td class="py-5 text-center">486456</td>
-                    <td class="py-5 text-center">08:00/10:00</td>
-                    <td class="py-5 text-center">C/lemos numero 4 portal 5 3ºB 41009</td>
-                   
-
-                </tr>
-
-                <tr>
-
-                    <td class="py-5 text-center">456456</td>
-                    <td class="py-5 text-center">08:00/10:00</td>
-                    <td class="py-5 text-center">C/lemos numero 4 portal 5 3ºB 41009</td>
-                    
-
-                </tr>
-
-                <tr>
-
-                    <td class="py-5 text-center">456456</td>
-                    <td class="py-5 text-center">08:00/10:00</td>
-                    <td class="py-5 text-center">C/lemos numero 4 portal 5 3ºB 41009</td>
-                    
-
-                </tr>
-
-            </tbody>
-        </table>
-    </div>
-
-    <div class="container">
-        <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Direccion</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Dudas</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
-          </ul>
-          <p class="text-center text-muted">© 2022 QMADO</p>
-        </footer>
-      </div>
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Direccion</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Dudas</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2022 QMADO</p>
+    </footer>
+  </div>
+  
 </body>
 </html>

@@ -47,46 +47,28 @@
         <table class="table container">
             <thead class="thead-dark">
                 <tr>
-                    <th class="text-center py-3">Número de pedido</th>
-                    <th class="text-center py-3">Hora de entrega</th>
+                    <th class="text-center py-3">ID</th>
                     <th class="text-center py-3">Dirección</th>
-                    <th class="text-center py-3">Ver detalle</th>
+                    <th class="text-center py-3">Entregado</th>
+                    <th class="text-center py-3">Comentario</th>
+                    <th class="text-center py-3">Hora de entrega</th>
 
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td class="py-5 text-center">456456</td>
-                    <td class="py-5 text-center">08:00/10:00</td>
-                    <td class="py-5 text-center">C/lemos numero 4 portal 5 3ºB 41009</td>
-                    <td class="py-5 text-center"><a href="detalle.html" class="btn btn-danger">Detalles</a></td>
-
-                </tr>
-
-                <tr>
-                    <td class="py-5 text-center">486456</td>
-                    <td class="py-5 text-center">08:00/10:00</td>
-                    <td class="py-5 text-center">C/lemos numero 4 portal 5 3ºB 41009</td>
-                    <td class="py-5 text-center"><a href="detalle.html" class="btn btn-danger">Detalles</a></td>
-
-                </tr>
-
-                <tr>
-                    <td class="py-5 text-center">456456</td>
-                    <td class="py-5 text-center">08:00/10:00</td>
-                    <td class="py-5 text-center">C/lemos numero 4 portal 5 3ºB 41009</td>
-                    <td class="py-5 text-center"><a href="detalle.html" class="btn btn-danger">Detalles</a></td>
-
-                </tr>
-
-                <tr>
-                    <td class="py-5 text-center">456456</td>
-                    <td class="py-5 text-center">08:00/10:00</td>
-                    <td class="py-5 text-center">C/lemos numero 4 portal 5 3ºB 41009</td>
-                    <td class="py-5 text-center"><a href="detalle.html" class="btn btn-danger">Detalles</a></td>
-
-                </tr>
-
+              <?php 
+              include_once "conexion.php";
+              $consulta = "SELECT * FROM `pedido` WHERE `entregado`= 0 ORDER BY id ASC";
+              $ordered = mysqli_query($conn, $consulta);
+              foreach ($ordered as $key => $lista) {
+                echo "<tr>";
+                foreach ($lista as $key => $insideLista) {
+                    echo "<td>" . $insideLista . "</td>";   
+                }
+                echo "<td class='py-5 text-center'><a href='detalle.php?id=$lista[id]' class='btn btn-danger'>Detalles</a></td>" .
+               "</tr>";
+            }
+            ?>
             </tbody>
         </table>
     </div>
